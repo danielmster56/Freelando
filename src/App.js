@@ -1,12 +1,16 @@
 // import logo from './logo.svg';
+import { Card } from "./componentes/Card/Card";
 import { Estilos } from "./componentes/EstilosGlobais/Estilos";
+import { ProvedorTema } from "./componentes/ProvedorTema/ProvedorTema";
 
 function App() {
   return (
-    <div>
+    <ProvedorTema>
       <Estilos />
+      <Card>
         <h1>Freelando</h1>
-    </div>
+      </Card>
+    </ProvedorTema>
   );
 }
 
