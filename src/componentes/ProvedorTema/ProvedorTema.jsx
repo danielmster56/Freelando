@@ -2,34 +2,34 @@ import { ThemeProvider  } from '@emotion/react'
 
 const tema = {
     cores:{
-        branco:'',
-        atencao:'',
-        focus:'',
+        branco:'#FFF',
+        atencao:'#FF0E0E',
+        focus:'#B009FF',
         primarias:{
             a:'#5754ED',
-            b:'',
-            c:'',
+            b:'#D93114',
+            c:'#168070',
         },
         secundarias:{
-            a:'#EBEAF9',
-            b:'',
-            c:'',
+            a:'#F8F8FD',
+            b:'#FDF8F8',
+            c:'#EBFCF9',
         },
         neutras:{
             a:'#373737',
-            b:'',
-            c:'',
-            d:'',
+            b:'#E8E8E8',
+            c:'#F5F5F5',
+            d:'#FFF',
         },
         dark:{
-            a:'',
-            b:'',
+            a:'#110EA0',
+            b:'#B61B00',
         }
     },
     espacamentos:{
-        xs :'8px',
-        s : '16px',
-        l : '32px',
+        xs:'8px',
+        s: '16px',
+        l: '32px',
     },
     fontFamily: "'Montserrat', sans-serif",
 }
