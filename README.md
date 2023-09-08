@@ -1,6 +1,5 @@
 # Projeto em React - Ainda em desenvolvimento!
 
-## Scripts Disponíveis
 No diretório do projeto, você pode executar:
 
 ### npm start:
