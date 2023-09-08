@@ -8,6 +8,7 @@ Abra http://localhost:3000 no seu navegador para visualizá-lo.
 A página será recarregada quando você fizer alterações.
 Você também pode ver erros de lint no console.
 
+*Documentação basica do react-app
 ### npm test
 Inicia o executor de testes no modo interativo de observação.
 Consulte a seção sobre execução de testes para obter mais informações.
