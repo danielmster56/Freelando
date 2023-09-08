@@ -1,7 +1,8 @@
-import styled from "@emotion/styled"
 import { useState } from "react"
-import { ItemListaSuspensaEstilizado } from "./ItemListaSuspensaEstilizado"
-import { ListaSuspensaEstilizada } from "./ListaSuspensaEstilizada"
+import styled from "@emotion/styled";
+import { ItemListaSuspensaEstilizado } from "./ItemListaSuspensaEstilizado";
+import { ListaSuspensaEstilizada } from "./ListaSuspensaEstilizada";
+
 
 const LabelEstilizada = styled.label`
     display: block;
@@ -39,77 +40,73 @@ const BotaoEstilizado = styled.button`
 `
 
 export const ListaSupensa = ({ titulo, opcoes }) => {
-    const [estaAberta, alternarVisibilidade] = useState(false)
+    const [estaAberta, alternarVisibilidade] = useState(false);
 
     const [opcaoFocada, setOpcaoFocada] = useState(null);
+
     const [opcaoSelecionada, setOpcaoSelecionada] = useState(null);
 
-    const manipularTeclaDoTeclado = (evento) => {
-        alternarVisibilidade(true)
+    const manipularTecla = (evento)=>{
+        alternarVisibilidade(true);
         switch (evento.key) {
             case 'ArrowDown':
                 evento.preventDefault();
                 setOpcaoFocada(focoAntigo => {
                     if (focoAntigo == null) {
-                        return 0;
+                        return 0;                        
                     }
-                    if (focoAntigo === (opcoes.length - 1)) {
-                        return opcoes.length - 1
-                    }
-                    return focoAntigo += 1
+                    return focoAntigo +=1;
                 })
                 break;
+
             case 'ArrowUp':
+            evento.preventDefault();
+            setOpcaoFocada(focoAntigo => {
+                if (!focoAntigo) {
+                    return 0;                        
+                }
+                return focoAntigo -=1;
+            })
+            break;
+
+            case 'Enter':
                 evento.preventDefault();
-                setOpcaoFocada(focoAntigo => {
-                    if (!focoAntigo) {
-                        return 0;
-                    }
-                    return focoAntigo -= 1
-                })
+                setOpcaoFocada(null);
+                alternarVisibilidade(false);
+                setOpcaoSelecionada(opcoes[opcaoFocada]);
                 break;
-                case 'Enter':
-                    evento.preventDefault();
-                    setOpcaoFocada(null)
-                    alternarVisibilidade(false)
-                    setOpcaoSelecionada(opcoes[opcaoFocada])
-                    break;
-                case 'Tab':
-                    setOpcaoFocada(null)
-                    alternarVisibilidade(false)
-                    break;
-                case 'Escape':
-                    evento.preventDefault();
-                    setOpcaoFocada(null)
-                    alternarVisibilidade(false)
-                    break;
+                
+        
             default:
                 break;
         }
     }
 
-    return (<LabelEstilizada>
+    return (
+    <LabelEstilizada>
         {titulo}
         <BotaoEstilizado
              estaAberta={estaAberta}
              onClick={() => alternarVisibilidade(!estaAberta)}
-             onKeyDown={manipularTeclaDoTeclado}
+             onKeyDown={manipularTecla}
         >
             <div>
-                { opcaoSelecionada ? opcaoSelecionada.text : 'Selecione' } 
+                {opcaoSelecionada ? opcaoSelecionada.text : 'Selecione'}
             </div>
             <div>
                 <span>{estaAberta ? '▲' : '▼'}</span>
             </div>
         </BotaoEstilizado>
         {estaAberta && <ListaSuspensaEstilizada>
-            {opcoes.map((opcao, index) => <ItemListaSuspensaEstilizado
+            {opcoes.map((opcao, index)=><ItemListaSuspensaEstilizado 
                 key={opcao.value}
                 focoAtivo={index === opcaoFocada}
                 onClick={() => setOpcaoSelecionada(opcao)}
                 >
                 {opcao.text}
+            
             </ItemListaSuspensaEstilizado>)}
         </ListaSuspensaEstilizada>}
-    </LabelEstilizada>)
+    </LabelEstilizada>
+    )
 }

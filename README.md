@@ -1,41 +1,55 @@
-![Freelando](thumbnail.png)
+# Projeto em React - Ainda em desenvolvimento!
 
-# Freelando
+No diretório do projeto, você pode executar:
 
-O Freelando é uma StartUP. 
-Nesse momento, é um MVP que tá só começando e ainda tem muitas funcionalidades novas para serem desenvolvidas.
+### npm start:
+Inicia o aplicativo no modo de desenvolvimento.
+Abra http://localhost:3000 no seu navegador para visualizá-lo.
+A página será recarregada quando você fizer alterações.
+Você também pode ver erros de lint no console.
 
-<img src="screencapture.png" alt="Imagem do Freelando" width="50%">
+*Documentação basica do react-app
+### npm test
+Inicia o executor de testes no modo interativo de observação.
+Consulte a seção sobre execução de testes para obter mais informações.
 
+### npm run build
+Compila o aplicativo para produção na pasta build.
+Ele agrupa corretamente o React no modo de produção e otimiza a compilação para obter o melhor desempenho.
 
-## 🔨 Funcionalidades do projeto
+A compilação é minificada e os nomes dos arquivos incluem os hashes.
+Seu aplicativo está pronto para ser implantado!
 
-Nesse primeiro momento, nós temos a página que foi idealizada como a primeiro entrega do time de desenvolvimento.
+Consulte a seção sobre implantação para obter mais informações.
 
-O [Figma dessa aplicação você encontra aqui](https://www.figma.com/file/DGIzbfXEi27oiKzI0nGMIV/Freelando-%7C-WebApp-com-React?node-id=244%3A11524&t=J2NfqHrvVIr0jsgs-0).
+### npm run eject
+**Observação: esta é uma operação unilateral. Uma vez que você eject, não pode voltar atrás!
 
-## ✔️ Técnicas e tecnologias utilizadas
+Se você não estiver satisfeito com a ferramenta de compilação e as opções de configuração, você pode eject a qualquer momento. Este comando removerá a única dependência de compilação do seu projeto.
 
-Se liga nessa lista de tudo que usaremos nesse curso:
+Em vez disso, ele copiará todos os arquivos de configuração e as dependências transitivas (webpack, Babel, ESLint, etc.) diretamente para o seu projeto, para que você tenha controle total sobre eles. Todos os comandos, exceto eject, ainda funcionarão, mas apontarão para os scripts copiados para que você possa ajustá-los. Neste ponto, você está por conta própria.
 
-- `React`
-- `Create React App`
-- `Emotion`
-- `React Grid System`
-- `Eventos do Teclado`
-- `GitHub`
-- `Trello`
-- `Figma`
+Você não é obrigado a usar eject. O conjunto de recursos selecionados é adequado para implantações pequenas e médias, e você não deve se sentir obrigado a usar esse recurso. No entanto, entendemos que esta ferramenta não seria útil se você não pudesse personalizá-la quando estiver pronto.
 
-E muito mais!
+## Saiba Mais
+Você pode aprender mais na documentação do Create React App.
 
-## 🛠️ Abrir e rodar o projeto
+Para aprender React, confira a documentação do React.
 
-Para abrir e rodar o projeto, execute `npm i` para instalar as dependências e `npm start` para inicar o projeto.
+### Divisão de Código
+Esta seção foi movida para: https://facebook.github.io/create-react-app/docs/code-splitting
 
-Depois, acesse <a href="http://localhost:3000/">http://localhost:3000/</a> no seu navegador.
+### Análise do Tamanho do Pacote
+Esta seção foi movida para: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-## 📚 Mais informações do curso
+### Criando um Progressive Web App
+Esta seção foi movida para: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-O Freelando é uma StartUP fictícia utilizada nesse curso da Alura.
-A ideia principal desse curso é evoluir ainda mais os conhecimentos em React e estilização de componentes.
+### Configuração Avançada
+Esta seção foi movida para: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Implantação
+Esta seção foi movida para: https://facebook.github.io/create-react-app/docs/deployment
+
+### Falha ao Minificar com npm run build
+Esta seção foi movida para: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
