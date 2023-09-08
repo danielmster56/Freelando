@@ -5,7 +5,6 @@ const LabelEstilizada = styled.label`
     width: 100%;
     box-sizing: border-box;
 `
-
 const InputEstilizado = styled.input`
     display: block;
     width: 100%;
@@ -18,10 +17,9 @@ const InputEstilizado = styled.input`
     border-radius: ${props => props.theme.espacamentos.s};
     height: 40px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 17px;
 `
-
 export const CampoTexto = ({titulo})=>{
     return(
     <LabelEstilizada>
