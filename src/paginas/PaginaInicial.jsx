@@ -47,7 +47,7 @@ const estadosBrasileiros = [
   { "text": "Tocantins", "value": "TO" }
 ]
 
-const PaginaInicial = ()=> {
+const PaginaInicial = () => {
   return (
     <ProvedorTema>
       <Estilos />
@@ -131,12 +131,12 @@ const PaginaInicial = ()=> {
                   </a>
                 </ItemListaInline>
                 <ItemListaInline>
-                  <a href="/" aria-label="Link para a Twitch">
+                  <a href="https://www.twitch.tv/drauzio_vraunela" aria-label="Link para a Twitch">
                     <IconeTwitch />
                   </a>
                 </ItemListaInline>
                 <ItemListaInline>
-                  <a href="/" aria-label="Link para a Instagram">
+                  <a href="https://www.instagram.com/dammndaniels/" aria-label="Link para a Instagram">
                     <IconeInstagram />
                   </a>
                 </ItemListaInline>
