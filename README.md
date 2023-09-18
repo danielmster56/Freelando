@@ -1,4 +1,3 @@
-## Aplicação em React do projeto fictício Freelando@
+# Aplicação em React do projeto fictício Freelando@
 
-
-# Run: npm i / npm start
+## Run: npm i / npm start
