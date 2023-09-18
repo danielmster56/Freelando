@@ -17,7 +17,7 @@ const LayoutBase = () => {
         <>
             <Cabecalho>
                 <Container>
-                    <Row algin="center">
+                    <Row align="center">
                         <Col>
                             <FreelandoLogo />
                         </Col>
@@ -27,7 +27,10 @@ const LayoutBase = () => {
                     </Row>
                 </Container>
             </Cabecalho>
+            <Container>
                 <Outlet/>
+            </Container>
+                
             <Rodape>
                 <Container>
                     <Row align="center">
