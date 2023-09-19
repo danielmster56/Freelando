@@ -1,4 +1,5 @@
 import { Col, Container, Row } from "react-grid-system"
+import { Outlet } from "react-router-dom"
 import { Cabecalho } from "../componentes/Cabecalho/Cabecalho"
 import { FreelandoLogo } from "../componentes/Icones/FreelandoLogo"
 import { IconeInstagram } from "../componentes/Icones/IconeInstagram"
@@ -10,7 +11,6 @@ import { ItemListaInline } from "../componentes/Lista/ItemListaInline"
 import { ListaInline } from "../componentes/Lista/ListaInline"
 import { Rodape } from "../componentes/Rodape/Rodape"
 import { Tipografia } from "../componentes/Tipografia/Tipografia"
-import { Outlet } from "react-router-dom"
 
 const LayoutBase = () => {
     return (
@@ -27,16 +27,13 @@ const LayoutBase = () => {
                     </Row>
                 </Container>
             </Cabecalho>
-            <Container>
-                <Outlet/>
-            </Container>
-                
+            <Outlet />
             <Rodape>
                 <Container>
                     <Row align="center">
                         <Col>
                             <FreelandoLogo height={40} width={176} />
-                            <Tipografia variante="legenda" componente="legenda">Desenvolvido por Daniel Dias. Projeto fictício sem fins comerciais.</Tipografia>
+                            <Tipografia variante="legenda" componente="legenda">Desenvolvido por Alura. Projeto fictício sem fins comerciais.</Tipografia>
                         </Col>
                         <Col style={{ textAlign: 'right' }}>
                             <Tipografia variante="legenda" componente="legenda">Acesse nossas redes:</Tipografia>
@@ -47,12 +44,12 @@ const LayoutBase = () => {
                                     </a>
                                 </ItemListaInline>
                                 <ItemListaInline>
-                                    <a href="https://www.twitch.tv/drauzio_vraunela" aria-label="Link para a Twitch">
+                                    <a href="/" aria-label="Link para a Twitch">
                                         <IconeTwitch />
                                     </a>
                                 </ItemListaInline>
                                 <ItemListaInline>
-                                    <a href="https://www.instagram.com/dammndaniels/" aria-label="Link para a Instagram">
+                                    <a href="/" aria-label="Link para a Instagram">
                                         <IconeInstagram />
                                     </a>
                                 </ItemListaInline>
@@ -67,7 +64,6 @@ const LayoutBase = () => {
                 </Container>
             </Rodape>
         </>
-
     )
 }
 

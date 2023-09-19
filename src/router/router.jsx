@@ -1,8 +1,10 @@
 import { createBrowserRouter } from "react-router-dom"
-import PaginaInicial from "../paginas/PaginaInicial"
+
 import Interesses from "../paginas/cadastro/Interesses";
 import LayoutBaseCadastro from "../paginas/cadastro/LayoutBaseCadastro";
 import LayoutBase from "../paginas/LayoutBase";
+import DadosPessoais from "../paginas/cadastro/DadosPessoais";
+import SelecaoCliente from "../paginas/cadastro/SelecaoCliente";
 
 export const router = createBrowserRouter([
     {
@@ -15,7 +17,7 @@ export const router = createBrowserRouter([
                 children:[
                     {
                         path:'',
-                        element: <Interesses/>,
+                        element: <SelecaoCliente/>,
                     },
                     {
                         path: 'interesses',
@@ -23,7 +25,7 @@ export const router = createBrowserRouter([
                     },
                     {
                         path: 'dados-pessoais',
-                        element: <h1>Dados Pessoais</h1>
+                        element: <DadosPessoais/>
                     },
                     {
                         path: 'concluido',
