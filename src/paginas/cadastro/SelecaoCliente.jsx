@@ -3,7 +3,7 @@ import { Tipografia } from "../../componentes/Tipografia/Tipografia"
 import cliente from './assets/cliente.png'
 import freelancer from './assets/freela.png'
 import { Link } from '../../componentes/Link/Link.jsx'
-import { Link as RouterLink} from "react-router-dom"
+import { Link as RouterLink } from "react-router-dom"
 
 
 const SelecaoCliente = () => {
@@ -23,7 +23,7 @@ const SelecaoCliente = () => {
                             Sou cliente e preciso de um freela!
                         </Tipografia>
                     </RouterLink>
-                    
+
                 </Col>
                 <Col md={6} sm={12}>
                     <img src={freelancer} alt="" />
